@@ -1,0 +1,24 @@
+{
+  "name": "ejs-simple-loader",
+  "version": "0.0.1",
+  "description": "basic ejs loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlsagan21/ejs-simple-loader.git"
+  },
+  "keywords": [
+    "ejs",
+    "webpack",
+    "loader"
+  ],
+  "author": "sookiwi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlsagan21/ejs-simple-loader/issues"
+  },
+  "homepage": "https://github.com/carlsagan21/ejs-simple-loader#readme"
+}
