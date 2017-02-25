@@ -48,7 +48,7 @@ npm install --save ejs-simple-loader
 
 I know there are several ejs loader available. [ejs-loader](https://github.com/okonet/ejs-loader), [ejs-compiled-loader](https://github.com/bazilio91/ejs-compiled-loader), [ejs-render-loader](https://www.npmjs.com/package/ejs-render-loader) have already existed and still works.
 
-But, [ejs-loader](https://github.com/okonet/ejs-loader) use `lodash` instead of *de facto* official [ejs](https://github.com/mde/ejs). [ejs-compiled-loader](https://github.com/bazilio91/ejs-compiled-loader) have problem with `<%- include('header') %>` syntax. it works in `<%- include header %>` form, but seems to fail on more [recent syntax](https://github.com/mde/ejs#includes). [ejs-render-loader](https://www.npmjs.com/package/ejs-render-loader) performs perfectly, but couldn't find repo. Only [npm package](https://www.npmjs.com/package/ejs-render-loader) seems to exist.
+But, [ejs-loader](https://github.com/okonet/ejs-loader) use `lodash` instead of *de facto* official [ejs](https://github.com/mde/ejs). [ejs-compiled-loader](https://github.com/bazilio91/ejs-compiled-loader) have problem with `<%- include('header') %>` syntax. it works in `<%- include header %>` syntax form, which is still supported, but seems to fail on more [recent syntax](https://github.com/mde/ejs#includes). [ejs-render-loader](https://www.npmjs.com/package/ejs-render-loader) performs perfectly, but I couldn't find repo of it. Only [npm package](https://www.npmjs.com/package/ejs-render-loader) seems to exist.
 
 And all of them are not actively updated. I'm not promising eternal maintenance of this library, but rather will do my best. ;)
 
