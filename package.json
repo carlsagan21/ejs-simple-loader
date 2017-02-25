@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/carlsagan21/ejs-simple-loader/issues"
   },
-  "homepage": "https://github.com/carlsagan21/ejs-simple-loader#readme"
+  "homepage": "https://github.com/carlsagan21/ejs-simple-loader#readme",
+  "dependencies": {
+    "ejs": "2.5.6",
+    "loader-utils": "1.0.2"
+  }
 }
