@@ -52,6 +52,8 @@ But, [ejs-loader](https://github.com/okonet/ejs-loader) use `lodash` instead of 
 [ejs-compiled-loader](https://github.com/bazilio91/ejs-compiled-loader) have problem with `<%- include('header') %>` syntax. it works in `<%- include header %>` syntax form, which is still supported, but seems to fail on more [recent syntax](https://github.com/mde/ejs#includes). And also too many unnecessary dependencies like `html-minifier`, `merge`, and `uglify-js`.  
 [ejs-render-loader](https://www.npmjs.com/package/ejs-render-loader) performs perfectly, but I couldn't find repo of it. Only [npm package](https://www.npmjs.com/package/ejs-render-loader) seems to exist.
 
+[html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) supports ejs or other template engines by itself. However `include` syntax is not possible.
+
 And all of them are not actively updated. I'm not promising eternal maintenance of this library, but rather will do my best. ;)
 
 ### License
