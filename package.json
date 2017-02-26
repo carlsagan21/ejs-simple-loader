@@ -33,6 +33,7 @@
     "babel-cli": "6.23.0",
     "babel-eslint": "7.1.1",
     "babel-preset-latest": "6.22.0",
+    "babel-preset-stage-1": "6.22.0",
     "eslint": "3.16.1",
     "eslint-config-babel": "6.0.0",
     "eslint-config-google": "0.7.1",
