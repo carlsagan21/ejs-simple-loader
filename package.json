@@ -1,6 +1,6 @@
 {
   "name": "ejs-simple-loader",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "basic ejs loader for webpack",
   "main": "index.js",
   "scripts": {
