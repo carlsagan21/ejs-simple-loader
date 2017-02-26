@@ -38,6 +38,15 @@ so it goes as followes:  ejs -> html -> javascript inserted html
 
 If it is used with html-webpack-plugin, the path is relative to the location of mother template. so if templates are stored in same directory, './filename' is enough.
 
+```javascript
+// also can pass params with global options
+config.ejsSimpleLoader = {
+  key: 'test',
+  title: template,
+  distPath: DIST_PATH
+}
+```
+
 ## Installation
 
 ```shell

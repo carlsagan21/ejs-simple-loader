@@ -11,9 +11,22 @@ const ejsSimpleLoader = function(content) {
   this.cacheable && this.cacheable();
 
   // Handle options
-  const query = loaderUtils.getOptions(this) || {};
-  const configKey = query.config || 'ejsSimpleLoader';
-  const options = this.options[configKey] || {};
+  const loaderOptions = loaderUtils.getOptions(this)
+  const query = loaderOptions
+
+  const configKey = loaderOptions.config || 'ejsSimpleLoader';
+  const globalOptions = this.options[configKey] || {};
+
+  const userOptions = {
+    ...globalOptions,
+    ...loaderOptions
+  };
+  const defaultOptions = {};
+
+  const options = {
+    ...defaultOptions,
+    ...userOptions
+  };
 
   // Use filenames relative to working dir, which should be project root
   options.filename = path.relative(process.cwd(), this.resourcePath);
