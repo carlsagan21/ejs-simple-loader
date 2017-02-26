@@ -1,19 +1,20 @@
-"use strict";
+'use strict';
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author sookiwi
 */
-var loaderUtils = require("loader-utils");
-var ejs = require("ejs");
+
+var loaderUtils = require('loader-utils');
+var ejs = require('ejs');
 var path = require('path');
 
-module.exports = function (content) {
+var ejsSimpleLoader = function ejsSimpleLoader(content) {
   this.cacheable && this.cacheable();
 
   // Handle options
   var query = loaderUtils.getOptions(this) || {};
-  var configKey = query.config || "ejsSimpleLoader";
+  var configKey = query.config || 'ejsSimpleLoader';
   var options = this.options[configKey] || {};
 
   // Use filenames relative to working dir, which should be project root
@@ -23,3 +24,5 @@ module.exports = function (content) {
 
   return 'module.exports = ' + JSON.stringify(template);
 };
+
+module.exports = ejsSimpleLoader;
