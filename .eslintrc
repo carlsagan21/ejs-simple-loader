@@ -1,4 +1,7 @@
 {
   "extends": ["eslint:recommended", "eslint-config-babel", "google"],
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
 }
