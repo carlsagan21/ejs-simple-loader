@@ -11,6 +11,7 @@ var path = require('path');
 module.exports = function (content) {
   this.cacheable && this.cacheable();
 
+  // Handle options
   var query = loaderUtils.getOptions(this) || {};
   var configKey = query.config || "ejsSimpleLoader";
   var options = this.options[configKey] || {};

@@ -4,6 +4,10 @@
   "description": "basic ejs loader for webpack",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -r lib/",
+    "build": "babel src/ --out-dir lib/",
+    "lint": "eslint src",
+    "prepublish": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +28,14 @@
   "dependencies": {
     "ejs": "2.5.6",
     "loader-utils": "1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-eslint": "7.1.1",
+    "babel-preset-latest": "6.22.0",
+    "eslint": "3.16.1",
+    "eslint-config-babel": "6.0.0",
+    "eslint-config-google": "0.7.1",
+    "eslint-plugin-flowtype": "2.30.0"
   }
 }

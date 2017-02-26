@@ -1,0 +1,4 @@
+{
+  "extends": ["eslint:recommended", "eslint-config-babel", "google"],
+  "parser": "babel-eslint"
+}
