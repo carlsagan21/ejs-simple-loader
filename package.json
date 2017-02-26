@@ -4,8 +4,8 @@
   "description": "basic ejs loader for webpack",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -r lib/",
-    "build": "babel src/ --out-dir lib/",
+    "clean": "rm -rf lib/",
+    "build": "babel src/ --out-dir lib/ && cp lib/index.js index.js",
     "lint": "eslint src",
     "prepublish": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
