@@ -11,11 +11,11 @@ const ejsSimpleLoader = function(content) {
   this.cacheable && this.cacheable();
 
   // Handle options
-  const loaderOptions = loaderUtils.getOptions(this)
+  const loaderOptions = loaderUtils.getOptions(this) || {}
   const query = loaderOptions
 
-  const configKey = loaderOptions.config || 'ejsSimpleLoader';
-  const globalOptions = this.options[configKey] || {};
+  const configKey = loaderOptions.config || 'ejsSimpleLoader'
+  const globalOptions = this.options[configKey] || {}
 
   const userOptions = {
     ...globalOptions,

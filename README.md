@@ -32,11 +32,13 @@ so it goes as followes:  ejs -> html -> javascript inserted html
 <!-- Use include syntax -->
 <!-- Use filenames relative to working dir. -->
 <div>
-  <%- include('./header') %>
+  <%- include('./header', {locale: locale}) %>
 </div>
 ```
 
 If it is used with html-webpack-plugin, the path is relative to the location of mother template. so if templates are stored in same directory, './filename' is enough.
+
+##### webpack1 globalOptions
 
 ```javascript
 // also can pass params with global options
@@ -46,6 +48,10 @@ config.ejsSimpleLoader = {
   distPath: DIST_PATH
 }
 ```
+
+##### Known Issues
+
+-   a possible problem with webpack2 `rules.use.loader`. I recommand you to use this with `html-webpack-plugin`.
 
 ## Installation
 

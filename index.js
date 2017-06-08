@@ -15,7 +15,7 @@ var ejsSimpleLoader = function ejsSimpleLoader(content) {
   this.cacheable && this.cacheable();
 
   // Handle options
-  var loaderOptions = loaderUtils.getOptions(this);
+  var loaderOptions = loaderUtils.getOptions(this) || {};
   var query = loaderOptions;
 
   var configKey = loaderOptions.config || 'ejsSimpleLoader';
