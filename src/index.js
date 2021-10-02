@@ -14,7 +14,7 @@ const ejsSimpleLoader = function(content) {
   const loaderOptions = loaderUtils.getOptions(this) || {}
   const query = loaderOptions
 
-  const configKey = loaderOptions.config || 'ejsSimpleLoader'
+  const configKey = loaderOptions.config || 'ejsSimpleLoader';
   const globalOptions = this.options[configKey] || {}
 
   const userOptions = {
